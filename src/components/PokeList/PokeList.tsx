@@ -6,7 +6,7 @@ export interface PokeData {
   url: string;
 }
 
-export const PokeList = () => {
+const PokeList = () => {
   const { data, isLoading } = useQuery(
     "pokemon-list",
     async () => {
@@ -23,10 +23,11 @@ export const PokeList = () => {
       {!isLoading &&
         data.results.map((i: PokeData) => (
           <div key={i.name}>
-            {i.name}
-            <Link to={`/details/${i.name}`}>Details</Link>
+            <Link to={`/details/${i.name}`}> {i.name}</Link>
           </div>
         ))}
     </>
   );
 };
+
+export default PokeList;

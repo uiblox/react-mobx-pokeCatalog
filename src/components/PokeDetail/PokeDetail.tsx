@@ -1,7 +1,7 @@
 import { useQuery } from "react-query";
 import { Link, useParams } from "react-router-dom";
 
-export const PokeDetail = () => {
+const PokeDetail = () => {
   const { name } = useParams<{ name: string }>();
 
   const { data, isLoading } = useQuery(
@@ -15,8 +15,10 @@ export const PokeDetail = () => {
   );
   return (
     <div>
-      {!isLoading && JSON.stringify(data)}
+      S{!isLoading && JSON.stringify(data)}
       <Link to={"/"}>back</Link>
     </div>
   );
 };
+
+export default PokeDetail;
