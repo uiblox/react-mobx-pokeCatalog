@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 import { useQuery } from "react-query";
 
-interface PokeData {
+export interface PokeData {
   name: string;
   url: string;
 }
@@ -20,7 +21,12 @@ export const PokeList = () => {
   return (
     <>
       {!isLoading &&
-        data.results.map((i: PokeData) => <div key={i.name}>{i.name}</div>)}
+        data.results.map((i: PokeData) => (
+          <div key={i.name}>
+            {i.name}
+            <Link to={`/details/${i.name}`}>Details</Link>
+          </div>
+        ))}
     </>
   );
 };
