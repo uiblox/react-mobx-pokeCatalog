@@ -8,7 +8,7 @@ const PokeDetail = lazy(() => import("./components/PokeDetail/PokeDetail"));
 const queryClient = new QueryClient();
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/*",
     element: <PokeList />,
   },
   {
