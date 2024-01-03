@@ -7,4 +7,5 @@ export default defineConfig({
   build: {
     outDir: "./docs",
   },
+  base: "/react-mobx-pokeCatalog", // this is IMPORTANT! this is required to update path of your root project based on the github project name.
 });
