@@ -1,6 +1,7 @@
 import { useQuery } from "react-query";
 import { PokeItem } from "../PokeItem/PokeItem";
-
+import styles from "./PokeList.module.css";
+import banner from "../../assets/Pokemon_logo.png";
 export interface PokeItem {
   name: string;
   url: string;
@@ -20,11 +21,12 @@ const PokeList = () => {
   );
   return (
     <>
+      <div className={styles["pokelist-banner"]}>
+        <img src={banner} width="400" height="147" />
+      </div>
       {!isLoading &&
         data.results.map((i: PokeItem) => (
-          <div key={i.name}>
-            <PokeItem name={i.name} url={i.url} />
-          </div>
+          <PokeItem key={i.name} name={i.name} url={i.url} />
         ))}
     </>
   );
