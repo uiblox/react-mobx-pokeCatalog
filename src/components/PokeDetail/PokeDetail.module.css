@@ -1,0 +1,72 @@
+.poke-detail {
+  background-color: hsl(0, 0%, 13%);
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  padding: 4rem;
+  width: 100%;
+}
+
+.poke-content {
+  display: flex;
+  color: hsl(0, 0%, 96%);
+  flex-direction: column;
+  width: 100%;
+}
+
+.poke-detail-background {
+  background-color: hsl(45, 86%, 63%);
+  height: 300px;
+  position: relative;
+  width: 300px;
+}
+
+.poke-detail-img {
+  position: absolute;
+  top: 50%;
+  right: -100px;
+  transform: translateY(-50%);
+}
+
+.poke-info {
+  padding-left: 10%;
+}
+
+.poke-name {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.poke-stats {
+  font-size: 1.4rem;
+  margin: 0;
+  font-weight: 200;
+}
+
+.poke-button {
+  color: hsl(0, 0%, 96%);
+  background-color: hsl(222, 48%, 44%);
+  padding: 8px 20px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.poke-button:hover {
+  background-color: hsl(222, 67%, 58%);
+}
+
+@media screen and (min-width: 768px) {
+  .poke-content {
+    flex-direction: row;
+  }
+
+  .poke-detail-background {
+    height: 400px;
+    width: 400px;
+  }
+
+  .poke-detail-img {
+    right: -140px;
+  }
+}
