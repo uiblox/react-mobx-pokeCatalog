@@ -1,0 +1,36 @@
+.poke-item,
+.skeleton-item {
+  color: #333;
+  display: flex;
+  text-decoration: none;
+  padding: 10px 40px;
+}
+
+.poke-index {
+  font-size: 1.4rem;
+  padding-right: 20px;
+}
+
+.skeleton-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 12px;
+}
+
+.poke-name {
+  display: flex;
+  font-size: 1.4rem;
+}
+
+.poke-stat {
+  padding: 0 20px 0 0;
+}
+
+.poke-item:nth-child(2n) {
+  background-color: hsl(0, 0%, 96%);
+}
+
+.poke-item:hover {
+  background-color: hsl(0, 0%, 88%);
+}
