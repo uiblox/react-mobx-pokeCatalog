@@ -1,0 +1,17 @@
+.skeleton {
+  animation: beat 2s linear infinite;
+}
+
+@keyframes beat {
+  0% {
+    background-color: lightgray;
+  }
+
+  50% {
+    background: grey;
+  }
+
+  100% {
+    background: lightgray;
+  }
+}
