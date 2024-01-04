@@ -1,6 +1,7 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { Suspense, lazy } from "react";
+import { LoaderSVG } from "./components/LoaderSVG/LoaderSVG";
 
 const PokeList = lazy(() => import("./components/PokeList/PokeList"));
 const PokeDetail = lazy(() => import("./components/PokeDetail/PokeDetail"));
@@ -19,7 +20,7 @@ const router = createBrowserRouter([
 
 const App = () => {
   return (
-    <Suspense fallback={<>...loading</>}>
+    <Suspense fallback={<LoaderSVG />}>
       <QueryClientProvider client={queryClient}>
         <RouterProvider router={router} />
       </QueryClientProvider>
