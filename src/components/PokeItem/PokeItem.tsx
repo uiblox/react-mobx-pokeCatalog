@@ -20,9 +20,9 @@ export const PokeItem = ({ name, url }: { name: string; url: string }) => {
           to={`/react-mobx-pokeCatalog/details/${data.name}`}
           className={styles["poke-item"]}
         >
-          <div>
-            <div className={styles["poke-name"]}>
-              <div>#{data.id}.</div>
+          <div className={styles["poke-container"]}>
+            <div className={styles["poke-heading"]}>
+              <div className={styles["poke-index"]}>#{data.id}.</div>
               <strong>{data.name}</strong>
             </div>
             <img

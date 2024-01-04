@@ -24,10 +24,12 @@ const PokeList = () => {
       <div className={styles["pokelist-banner"]}>
         <img src={banner} width="400" height="147" />
       </div>
-      {!isLoading &&
-        data.results.map((i: PokeItem) => (
-          <PokeItem key={i.name} name={i.name} url={i.url} />
-        ))}
+      <div className={styles["pokelist-grid"]}>
+        {!isLoading &&
+          data.results.map((i: PokeItem) => (
+            <PokeItem key={i.name} name={i.name} url={i.url} />
+          ))}
+      </div>
     </>
   );
 };

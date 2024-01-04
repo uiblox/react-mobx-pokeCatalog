@@ -3,12 +3,8 @@
   color: #333;
   display: flex;
   text-decoration: none;
-  padding: 10px 40px;
-}
-
-.poke-index {
-  font-size: 1.4rem;
-  padding-right: 20px;
+  justify-content: center;
+  /* padding: 10px 40px; */
 }
 
 .skeleton-content {
@@ -18,9 +14,20 @@
   padding-left: 12px;
 }
 
-.poke-name {
+.poke-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.poke-heading {
   display: flex;
   font-size: 1.4rem;
+}
+
+.poke-index {
+  margin-right: 8px;
 }
 
 .poke-stat {
