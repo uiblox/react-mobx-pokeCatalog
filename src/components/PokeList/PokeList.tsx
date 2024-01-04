@@ -1,4 +1,4 @@
-import { useInfiniteQuery, useQuery } from "react-query";
+import { useInfiniteQuery } from "react-query";
 import { PokeItem } from "../PokeItem/PokeItem";
 import styles from "./PokeList.module.css";
 import banner from "../../assets/Pokemon_logo.png";
