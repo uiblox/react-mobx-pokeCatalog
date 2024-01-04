@@ -17,7 +17,10 @@ const PokeDetail = () => {
     <>
       {!isLoading && data ? (
         <div className={styles["poke-detail"]}>
-          <Link className={styles["poke-button"]} to={"/"}>
+          <Link
+            className={styles["poke-button"]}
+            to={"/react-mobx-pokeCatalog"}
+          >
             &lt; back
           </Link>
           <div className={styles["poke-content"]}>
