@@ -16,7 +16,10 @@ export const PokeItem = ({ name, url }: { name: string; url: string }) => {
   return (
     <>
       {!isLoading ? (
-        <Link to={`/details/${data.name}`} className={styles["poke-item"]}>
+        <Link
+          to={`/react-mobx-pokeCatalog/details/${data.name}`}
+          className={styles["poke-item"]}
+        >
           <div>
             <div className={styles["poke-name"]}>
               <div>#{data.id}.</div>

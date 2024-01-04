@@ -12,7 +12,7 @@ const router = createBrowserRouter([
     element: <PokeList />,
   },
   {
-    path: "/details/:name",
+    path: "/react-mobx-pokeCatalog/details/:name",
     element: <PokeDetail />,
   },
 ]);
