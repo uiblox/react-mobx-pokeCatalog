@@ -13,6 +13,6 @@ Project Goals: Illustrate modern data fetching techniques using react query. Uti
 
 ## Demo
 
-[Poke Catalog](https://bournecreative.github.io/react-mobx-pokeCatalog/)
+[Poke Catalog](https://uiblox.github.io/react-mobx-pokeCatalog/)
 
 Tech: React, TypeScript, React Router, React Query, Mobx, Restful API
